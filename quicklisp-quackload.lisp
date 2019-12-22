@@ -74,8 +74,8 @@
       (let ((ql-quickload (find-symbol "QUICKLOAD" ql-package)))
         (apply ql-quickload systems rest)))))
 
-(let* ((ql-package (find-package "QUICKLISP")))
+(let ((ql-package (find-package "QUICKLISP")))
   (when ql-package
-    (let((ql-quackload (intern "QUACKLOAD" ql-package)))
+    (let ((ql-quackload (intern "QUACKLOAD" ql-package)))
       (export ql-quackload ql-package)
       (setf (fdefinition ql-quackload) #'quackload))))
