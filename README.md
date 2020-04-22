@@ -1,6 +1,6 @@
 # quicklisp-quackload
 
-This project adds duck typing to the Quicklisp client.
+This project adds duck typing to the Quicklisp client. Optionally, it can be used to facilitate rubber-duck debugging of the Quicklisp client.
 
 ## Exports
 
